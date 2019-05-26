@@ -5,16 +5,20 @@
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node index.ts"
-  },
-  "installConfig": {
-    "pnp": true
+    "start": "ts-node index.ts",
+    "dev": "ts-node-dev --no-notify --respawn --transpileOnly ./"
   },
   "dependencies": {
+    "graphql": "^14.3.1",
+    "graphql-yoga": "^1.17.4",
+    "nexus": "^0.11.7",
+    "nexus-prisma": "^0.3.7",
     "prisma-client-lib": "^1.33.0"
   },
   "devDependencies": {
+    "@types/node": "^12.0.2",
     "ts-node": "^8.2.0",
+    "ts-node-dev": "^1.0.0-pre.39",
     "typescript": "^3.4.5"
   }
 }
